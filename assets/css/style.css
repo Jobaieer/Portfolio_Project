@@ -414,7 +414,15 @@ body {
     display: flex;
     align-items: center;
   }
-  
+  /*Responsive*/
+  @media (max-width: 992px){
+    #about ul li{
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center; 
+    }
+  }
+
   .about .content ul strong {
     margin-right: 10px;
   }
@@ -430,6 +438,11 @@ body {
     margin-bottom: 0;
   }
   
+.about img{
+  border-radius: 5%;
+  box-shadow: 5px 5px 5px red;
+}
+
   /*--------------------------------------------------------------
   # Skills
   --------------------------------------------------------------*/
