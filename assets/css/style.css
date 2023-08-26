@@ -788,3 +788,7 @@ body {
   #footer .credits {
     font-size: 13px;
   }
+
+  #footer .time{
+    color: #ed3c0d;
+  }

@@ -366,14 +366,32 @@
         <a href="https://www.github.com/jobaieer/" target="_blank" class="github"><i class="bi bi-github"></i></a>
         <a href="https://www.discordapp.com/users/2713" target="_blank"><i class="bi bi-discord"></i></a>
       </div>
+      <div class="time">
+        <b>
+          <script>
+            function showTime() {
+              var now = new Date();
+              var hours = now.getHours();
+              var minutes = now.getMinutes();
+              var seconds = now.getSeconds();
+              var time = hours + ":" + minutes + ":" + seconds;
+              document.getElementById("time").innerHTML = time;
+            }
+            setInterval(showTime, 1000);
+          </script>
+          <span id="time"></span>
+        </b>
+      </div>
       <div class="copyright">
-        &copy; Copyright <strong><span><b>Jobaieer</b></span></strong>. All Rights Reserved.
+        &copy;
+        <script>document.write(new Date().getFullYear() + "-" + (new Date().getFullYear() + 1))</script>
+        <strong><span><b>Jobaieer</b></span></strong>. All Rights Reserved.
       </div>
       <div class="credits">
         Designed by <a href="https://linktr.ee/jobaieer"><b>Jobaieer.</b></a>
       </div>
-    </div>
-  </footer><!-- End Footer -->
+      </div>
+      </footer><!-- End Footer -->
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
